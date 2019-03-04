@@ -1,0 +1,5 @@
+for( var i = 0; i < wordsArray.length-1; i++){ 
+       if ( wordsArray[i] === "the" || wordsArray[i] === "and" || wordsArray[i] === "a" || wordsArray[i] === "of" || wordsArray[i] === "in" ) {
+         wordsArray.splice(i, 1); 
+        }
+    }

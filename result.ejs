@@ -5,7 +5,7 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<style>
 		body {
-			background-image: url(https://openclipart.org/image/2400px/svg_to_png/289583/Gradient-04.png);//This Image is just for the testing purpose.
+			background-image: url(https://openclipart.org/image/2400px/svg_to_png/289583/Gradient-04.png);
 
 			background-repeat: no-repeat, repeat;
 			background-size: ;
@@ -52,17 +52,12 @@
 			  
 			  	
 			    <%for(var i=0; i<number;i++){ %>
-	    		<!--<li><%= finalWordsArray[i].name%>,  ,<strong><%=finalWordsArray[i].total %></strong>    </li>-->
-	    	
 	    		<tr>
 	    			<td><%= i+1 %></td>
 	    			<td><%= finalWordsArray[i].name%></td>
 	    			<td><%= finalWordsArray[i].total%></td>
 	    			
 	    		</tr>
-	    		
-	    		
-	    		
 				<% } %>
 			    
 			  </tbody>

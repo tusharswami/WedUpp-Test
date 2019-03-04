@@ -5,10 +5,9 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<style>
 		body {
-			background-image: url(https://openclipart.org/image/2400px/svg_to_png/289583/Gradient-04.png);
-
+			background-image: url(https://openclipart.org/image/2400px/svg_to_png/289583/Gradient-04.png);7
 			background-repeat: no-repeat, repeat;
-			background-size: ;
+			background-size: cover;
 		}
 
 		form {
@@ -21,16 +20,17 @@
 			text-align: center;
 			padding-left: 35%;		
 		}
+		
 	</style>
 </head>
 <body>
 
 <div>	
-
+		
 		<form action="/submit" method="post">	
 				<div class="form">	
 						<div class="form-group">
-					<input class="form-control" type="text" name="number" placeholder="Enter a number" required>
+					<input class="form-control" type="number" name="number" placeholder="Enter a number between 1 to 25" onkeypress='return event.charCode >= 48 && event.charCode <= 57'  min="1" max="25" title="Enter Numbers between 1 to 25" required>
 				</div>
 				
 					<button type="submit" class="btn btn-primary">Submit</button>
